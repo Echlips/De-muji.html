@@ -707,6 +707,21 @@ footer p {
     .floating-audio-container audio { width: 100%; }
     footer { flex-direction: column; align-items: center; text-align: center; }
 }
+
+/* Remove unwanted horizontal lines around the couple's names */
+#home hr,
+.couple-card hr {
+    display: none !important;
+    border: none !important;
+}
+
+.couple-card {
+    border-bottom: none !important;
+}
+
+.couple-card h1 {
+    border-bottom: none !important;
+}
 </style>
 </head>
 <body>
