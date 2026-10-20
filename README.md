@@ -266,39 +266,26 @@ p {
     line-height: 1.8;
     max-width: 620px;
 }
-/* =========================================
-   BRIDE AND GROOM NAME CARD
-========================================= */
+/* Elegant Bride and Groom Names */
 
 .couple-card {
-    width: min(900px, 100%);
-    margin: 25px auto;
-    padding: clamp(25px, 5vw, 50px) clamp(18px, 4vw, 45px);
-
-    background: linear-gradient(
-        145deg,
-        rgba(53, 20, 33, 0.96),
-        rgba(23, 17, 19, 0.96)
-    );
-
-    border: 1px solid var(--antique-gold);
-    border-radius: 12px;
-
-    box-shadow:
-        0 0 0 5px rgba(197, 164, 91, 0.08),
-        0 15px 40px rgba(0, 0, 0, 0.35);
-
-    position: relative;
+    width: min(950px, 100%);
+    margin: 30px auto;
+    padding: 25px 10px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     text-align: center;
 }
 
 .couple-card-label {
-    color: var(--green);
+    color: var(--antique-gold);
     font-family: var(--body-font);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 4px;
-    margin-bottom: 22px;
+    margin: 18px 0;
 }
 
 .couple-card h1 {
@@ -306,48 +293,84 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-
     margin: 0;
     color: var(--light-gold);
     font-family: var(--heading-font);
-    font-size: clamp(35px, 6vw, 68px);
+    font-size: clamp(34px, 6vw, 65px);
     line-height: 1.12;
-    overflow-wrap: anywhere;
 }
 
 .couple-card .bride-name,
 .couple-card .groom-name {
     display: block;
     max-width: 100%;
+    color: var(--light-gold);
+    font-size: inherit;
+    font-style: normal;
+    overflow-wrap: anywhere;
 }
 
 .couple-card .couple-ampersand {
     color: var(--green);
-    font-family: var(--heading-font);
-    font-size: clamp(30px, 4vw, 42px);
+    font-size: 35px;
     font-style: italic;
-    margin: 5px 0;
+    margin: 0;
 }
 
-.couple-card-ornament {
-    margin-top: 25px;
+.name-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 85%;
+    max-width: 550px;
+    margin: 0 auto;
     color: var(--antique-gold);
-    font-size: 20px;
-    letter-spacing: 8px;
+}
+
+.name-divider span {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--antique-gold)
+    );
+}
+
+.name-divider span:last-of-type {
+    background: linear-gradient(
+        to left,
+        transparent,
+        var(--antique-gold)
+    );
+}
+
+.name-divider b {
+    font-size: 17px;
+    letter-spacing: 4px;
+}
+
+.bottom-divider {
+    margin-top: 25px;
 }
 
 @media (max-width: 600px) {
     .couple-card {
-        padding: 28px 16px;
+        padding: 20px 0;
         margin: 20px auto;
     }
 
-    .couple-card-label {
-        letter-spacing: 2px;
+    .couple-card h1 {
+        font-size: clamp(30px, 7.5vw, 43px);
     }
 
-    .couple-card h1 {
-        font-size: clamp(30px, 8vw, 44px);
+    .couple-card-label {
+        letter-spacing: 3px;
+    }
+
+    .name-divider {
+        width: 95%;
     }
 }
 
@@ -742,20 +765,30 @@ footer p {
       Mallam Abdulganiyu Salman
     </h2>
     <p>cordially invite you to celebrate the union of their children.</p>
-<!-- Bride and Groom Name Card -->
+<!-- Bride and Groom Names -->
 <div class="couple-card">
+
+    <div class="name-divider">
+        <span></span>
+        <b>✦ ❖ ✦</b>
+        <span></span>
+    </div>
+
     <p class="couple-card-label">THE BRIDE &amp; GROOM</p>
 
     <h1>
         <span class="bride-name">Muhsina Musa</span>
-
         <span class="couple-ampersand">&amp;</span>
-
-        <span class="groom-name">Abdulqudus Abdulganiyu Mayowa</span>
+        <span class="groom-name">
+            Abdulqudus Abdulganiyu Mayowa
+        </span>
     </h1>
 
-    <div class="couple-card-ornament">✦ ❖ ✦</div>
-</div>
+    <div class="name-divider bottom-divider">
+        <span></span>
+        <b>✦ ❖ ✦</b>
+        <span></span>
+    </div>
     <a href="#details" style="margin-top: 20px;">EXPLORE THE INVITATION</a>
 </section>
 
@@ -1001,6 +1034,6 @@ if (rsvpForm) {
 </script>
 </body>
 </html>
-
-
     
+    
+        <            "
