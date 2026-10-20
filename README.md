@@ -789,6 +789,7 @@ footer p {
         <b>✦ ❖ ✦</b>
         <span></span>
     </div>
+</div>
     <a href="#details" style="margin-top: 20px;">EXPLORE THE INVITATION</a>
 </section>
 
@@ -1034,6 +1035,3 @@ if (rsvpForm) {
 </script>
 </body>
 </html>
-    
-    
-        <            "
